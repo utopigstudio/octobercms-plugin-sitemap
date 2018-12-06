@@ -110,10 +110,10 @@ class Definition extends Model
              */
             else {
 
-                if (class_exists("\RainLab\Blog\Models\Post") && $item->type == 'blog-category' || $item->type == 'all-blog-categories') {
+                if ($item->type == 'blog-category' || $item->type == 'all-blog-categories' && class_exists("\RainLab\Blog\Models\Post")) {
                     $apiResult = self::extendCategoryResolveMenuItem($item, $currentUrl, $theme);
                 }
-                elseif (class_exists("\RainLab\Blog\Models\Post") && $item->type == 'blog-post' || $item->type == 'all-blog-posts') {
+                elseif ($item->type == 'blog-post' || $item->type == 'all-blog-posts' && class_exists("\RainLab\Blog\Models\Post")) {
                     $apiResult = self::extendPostResolveMenuItem($item, $currentUrl, $theme);
                 }
                 else {
@@ -328,7 +328,7 @@ class Definition extends Model
             }
         }
 
-        return $result;
+        return [$result];
     }
 
     protected static function getPostMenuItem($page, $post, $url)
