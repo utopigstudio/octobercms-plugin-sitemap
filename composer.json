@@ -1,0 +1,18 @@
+{
+    "name": "utopigs/sitemap-plugin",
+    "type": "october-plugin",
+    "description": "Sitemap plugin for October CMS",
+    "keywords": ["october", "octobercms", "sitemap"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Utopig Studio",
+            "email": "info@utopigstudio.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0"
+    },
+    "minimum-stability": "dev"
+}

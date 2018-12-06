@@ -1,0 +1,58 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    type:
+        label: utopigs.sitemap::lang.item.type
+        type: dropdown
+
+    url:
+        label: utopigs.sitemap::lang.item.url
+
+    reference:
+        label: utopigs.sitemap::lang.item.reference
+        type: dropdown
+        cssClass: input-sidebar-control
+
+    cmsPage:
+        label: utopigs.sitemap::lang.item.cms_page
+        comment: utopigs.sitemap::lang.item.cms_page_comment
+        type: dropdown
+        cssClass: input-sidebar-control
+
+    nesting:
+        label: utopigs.sitemap::lang.item.allow_nested_items
+        comment: utopigs.sitemap::lang.item.allow_nested_items_comment
+        type: checkbox
+        default: true
+
+    priority:
+        span: left
+        label: utopigs.sitemap::lang.item.priority
+        type: dropdown
+        options:
+            '0.1': '0.1'
+            '0.2': '0.2'
+            '0.3': '0.3'
+            '0.4': '0.4'
+            '0.5': '0.5'
+            '0.6': '0.6'
+            '0.7': '0.7'
+            '0.8': '0.8'
+            '0.9': '0.9'
+            '1.0': '1.0'
+
+    changefreq:
+        span: right
+        label: utopigs.sitemap::lang.item.changefreq
+        type: dropdown
+        options:
+            always: utopigs.sitemap::lang.item.always
+            hourly: utopigs.sitemap::lang.item.hourly
+            daily: utopigs.sitemap::lang.item.daily
+            weekly: utopigs.sitemap::lang.item.weekly
+            monthly: utopigs.sitemap::lang.item.monthly
+            yearly: utopigs.sitemap::lang.item.yearly
+            never: utopigs.sitemap::lang.item.never
